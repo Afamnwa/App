@@ -1,0 +1,30 @@
+{
+  "name": "fire-safety-academy",
+  "version": "1.0.0",
+  "description": "Secure fire safety training site with OTP email verification, quizzes and admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "backup": "node backup.js export",
+    "restore": "node backup.js import",
+    "backup:github": "node backup.js push",
+    "restore:github": "node backup.js pull"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "cookie-parser": "^1.4.7",
+    "dejavu-fonts-ttf": "^2.37.3",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "nodemailer": "^10.0.14",
+    "pdfkit": "^0.20.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
